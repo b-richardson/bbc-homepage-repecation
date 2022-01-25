@@ -1,0 +1,290 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* MAIN WELCOME */
+.main-welcome{
+  display: flex;
+  width: 50%;
+  padding-top: 20px;
+  padding-left: 10px;
+  color: grey;
+}
+.main-welcome h2{
+  font-size: 20px;
+}
+/* TOP HALF */
+.top-half{
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: row;
+}
+/* TOP SECTION */
+.top-section-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+  height: 250px;
+  /* border: 2px solid black; */
+  margin-left: 10px;
+}
+.top-section-left{
+
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(22, 22, 22, 0.73)),url(https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/im7nu3chbmuywvbw_1615439165.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.top-section-left .description{
+  color: rgb(190,190,190);
+}
+/* TOP SECTION RIGHT */
+
+.top-section-right{
+  display: flex;
+  width: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.top-section-right .s1b,.s2,.s3,.s4{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
+  width: 47%;
+  justify-content: flex-end;
+  padding-left: 10px;
+
+}
+
+.top-section-right>section{
+  /* outline: 1px solid red; */
+}
+
+.top-section-right .description{
+  color: white;
+}
+.top-section-right .topic{
+  color: lightgrey;
+}
+
+/* TOP SECTIOM RIGHT BACKGROUND IMAGES */
+/* S1 */
+.top-section-right .s1b{
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(22, 22, 22, 0.73)),url(https://www.gannett-cdn.com/media/2019/06/30/USATODAY/usatsports/gettyimages-153718849.jpg?crop=1365,768,x0,y0&width=1365&height=768&format=pjpg&auto=webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+}
+/* S2 */
+.top-section-right .s2{
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(22, 22, 22, 0.73)),url(https://shrm-res.cloudinary.com/image/upload/c_crop,h_768,w_1365,x_0,y_0/w_auto:100,w_1200,q_35,f_auto/v1/Legal%20and%20Compliance/vaccine4m_bwzvko.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+}
+/* S3 */
+.top-section-right .s3{
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(22, 22, 22, 0.73)),url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2018/07/01153710/benefits-of-working-from-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+}
+/* S4 */
+.top-section-right .s4{
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(22, 22, 22, 0.73)),url(https://i.guim.co.uk/img/media/c2e2ffa340c62ddaca6428e68ce834e0544d8d4d/0_369_1734_1040/master/1734.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=2ef974fff9699a81900716f859ef52e7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+}
+/* BOTTOM HALF */
+
+.bottom-half{
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 80px;
+
+}
+.bottom-half .description{
+  font-size: 15px;
+}
+.bottom-half p{
+  font-size: 12px;
+  color: rgb(164, 164, 164);
+}
+.bottom-half .location{
+  font-size: 10px;
+  color: rgb(164, 164, 164);
+}
+
+
+/* First Third */
+
+.first-third{
+  width: 33.33%;
+  height: 275px;
+  /* border: 2px solid black; */
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.image-section-one{
+  /* border: 2px solid red; */
+  height: 175px;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(22, 22, 22, 0.73)),url(https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/08/Biden_Harris_1296x728-header-1296x729.jpg?w=1155&h=2268);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31vh;
+}
+
+
+
+/* Second Third */
+
+.second-third{
+  width: 33.33%;
+  height: 275px;
+  /* border: 2px solid black; */
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.image-section-two{
+  /* border: 2px solid red; */
+  height: 175px;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(22, 22, 22, 0.73)),url(https://cdni0.trtworld.com/w960/h540/q75/85712_BLR200813BELARUSPROTESTSRTR_1597321905956.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31vh;
+}
+
+
+/* Last Third */
+
+.last-third{
+  width: 33.33%;
+  height: 275px;
+  /* border: 2px solid black; */
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.image-section-three{
+  /* border: 2px solid red; */
+  height: 175px;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(22, 22, 22, 0.73)),url(https://media.wired.com/photos/5fa5c014d683a4ea1e288713/master/pass/Culture_trump_socialmedia_1229490572.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+  width: 100%;
+  height: 20%;
+  background: orange;
+  color: white;
+  float: left;
+}
+.logo-image{
+    width: 64px;
+    height: 30px;
+    overflow: hidden;
+}
+li{
+  float: left;
+  list-style: none;
+  border-right: 2px solid white;
+}
+}
+ul{
+  list-style: none;
+  clear: both;
+}
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
